@@ -9,6 +9,6 @@ app.use(express.json());
 app.use(routes);
 
 
-app.listen(3331, () => {
+app.listen(process.env.PORT || 3331, () => {
     console.log('server running');
 })
